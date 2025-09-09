@@ -1,0 +1,38 @@
+{
+  "name": "daniel-edoun-portfolio",
+  "version": "1.0.0",
+  "description": "Daniel EDOUN's Professional Portfolio - Cloud Ready",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server --port=3000 --open=/index.html",
+    "dev": "npx live-server --port=3000 --open=/index.html",
+    "build": "echo 'Portfolio is ready for deployment!'",
+    "deploy:netlify": "echo 'Upload files to Netlify for deployment'",
+    "deploy:vercel": "vercel --prod",
+    "deploy:github": "echo 'Push to GitHub and enable Pages'"
+  },
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "daniel-edoun",
+    "responsive",
+    "multilingual"
+  ],
+  "author": {
+    "name": "Daniel EDOUN",
+    "email": "danieledoun9@gmail.com",
+    "url": "https://danieledoun.netlify.app"
+  },
+  "license": "MIT",
+  "homepage": "https://danieledoun.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danieledoun/portfolio"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

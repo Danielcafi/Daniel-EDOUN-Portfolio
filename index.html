@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel EDOUN - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Daniel EDOUN</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-en="Home" data-fr="Accueil">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-en="About" data-fr="À propos">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-en="Skills" data-fr="Compétences">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-en="Projects" data-fr="Projets">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-en="Contact" data-fr="Contact">Contact</a>
+                </li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span data-en="Hi, I'm" data-fr="Salut, je suis"></span> <span class="highlight">Daniel EDOUN</span>
+                </h1>
+                <h2 class="hero-subtitle" data-en="Web Developer & Designer" data-fr="Développeur Web & Designer">Web Developer & Designer</h2>
+                <p class="hero-description" data-en="Passionate about creating beautiful, functional websites and web applications. With 3 years of experience in web development, I bring ideas to life through code." data-fr="Passionné par la création de sites web et d'applications web beaux et fonctionnels. Avec 3 ans d'expérience en développement web, je donne vie aux idées grâce au code.">
+                    Passionate about creating beautiful, functional websites and web applications. 
+                    With 3 years of experience in web development, I bring ideas to life through code.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" data-en="View My Work" data-fr="Voir Mon Travail">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary" data-en="Get In Touch" data-fr="Me Contacter">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="profile.png" alt="Daniel EDOUN" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="profile-placeholder" style="display: none;">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="element element-1"></div>
+                        <div class="element element-2"></div>
+                        <div class="element element-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-en="About Me" data-fr="À Propos de Moi">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-en="Passionate Web Developer" data-fr="Développeur Web Passionné">Passionate Web Developer</h3>
+                    <p data-en="I'm Daniel EDOUN, a dedicated web developer with 3 years of experience in creating modern, responsive websites and web applications. I specialize in front-end development and have a keen eye for design and user experience." data-fr="Je suis Daniel EDOUN, un développeur web dévoué avec 3 ans d'expérience dans la création de sites web et d'applications web modernes et responsives. Je me spécialise dans le développement front-end et j'ai un œil attentif pour le design et l'expérience utilisateur.">
+                        I'm Daniel EDOUN, a dedicated web developer with 3 years of experience in creating 
+                        modern, responsive websites and web applications. I specialize in front-end development 
+                        and have a keen eye for design and user experience.
+                    </p>
+                    <p data-en="My journey in web development started with a passion for creating digital solutions that make a difference. I enjoy turning complex problems into simple, beautiful, and intuitive designs." data-fr="Mon parcours dans le développement web a commencé avec une passion pour créer des solutions numériques qui font la différence. J'aime transformer des problèmes complexes en designs simples, beaux et intuitifs.">
+                        My journey in web development started with a passion for creating digital solutions 
+                        that make a difference. I enjoy turning complex problems into simple, beautiful, 
+                        and intuitive designs.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>3+</h4>
+                            <p data-en="Years Experience" data-fr="Années d'Expérience">Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h4>10+</h4>
+                            <p data-en="Projects Completed" data-fr="Projets Terminés">Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h4>10+</h4>
+                            <p data-en="Client Satisfaction" data-fr="Satisfaction Client">Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="tech-icons">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-react"></i>
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-en="Skills & Technologies" data-fr="Compétences & Technologies">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-en="Frontend Development" data-fr="Développement Frontend">Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-en="Backend Development" data-fr="Développement Backend">Backend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-en="Tools & Others" data-fr="Outils & Autres">Tools & Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-en="Featured Projects" data-fr="Projets en Vedette">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="file:///C:/Users/laptop/Documents/tala-clone/index.html" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-en="MYAP - Fintech Landing Page" data-fr="MYAP - Page d'Accueil Fintech">MYAP - Fintech Landing Page</h3>
+                        <p data-en="A professional fintech landing page clone featuring modern design, responsive layout, customer testimonials, and comprehensive financial services presentation. Built with HTML5, CSS3, and JavaScript." data-fr="Un clone de page d'accueil fintech professionnel avec un design moderne, une mise en page responsive, des témoignages clients et une présentation complète des services financiers. Construit avec HTML5, CSS3 et JavaScript.">
+                            A professional fintech landing page clone featuring modern design, responsive layout, customer testimonials, and comprehensive financial services presentation. Built with HTML5, CSS3, and JavaScript.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="file:///C:/Users/laptop/xprojects/Portfolio%20Daniel%20edoun/index.html" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-en="Professional Portfolio Website" data-fr="Site Web Portfolio Professionnel">Professional Portfolio Website</h3>
+                        <p data-en="A modern, responsive portfolio website featuring smooth animations, language switcher (EN/FR), interactive elements, and professional design. Built with HTML5, CSS3, and JavaScript." data-fr="Un site web portfolio moderne et responsive avec des animations fluides, un sélecteur de langue (EN/FR), des éléments interactifs et un design professionnel. Construit avec HTML5, CSS3 et JavaScript.">
+                            A modern, responsive portfolio website featuring smooth animations, language switcher (EN/FR), interactive elements, and professional design. Built with HTML5, CSS3, and JavaScript.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="http://localhost:5173" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-en="Modern Web Application" data-fr="Application Web Moderne">Modern Web Application</h3>
+                        <p data-en="A cutting-edge web application built with modern technologies, featuring responsive design, interactive components, and seamless user experience. Running on local development server." data-fr="Une application web de pointe construite avec des technologies modernes, présentant un design responsive, des composants interactifs et une expérience utilisateur fluide. Fonctionnant sur un serveur de développement local.">
+                            A cutting-edge web application built with modern technologies, featuring responsive design, interactive components, and seamless user experience. Running on local development server.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Vite</span>
+                            <span>Modern JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-en="Get In Touch" data-fr="Me Contacter">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-en="Let's work together!" data-fr="Travaillons ensemble !">Let's work together!</h3>
+                    <p data-en="I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!" data-fr="Je suis toujours intéressé par de nouvelles opportunités et des projets passionnants. Que vous ayez une question ou que vous vouliez simplement dire bonjour, je ferai de mon mieux pour vous répondre !">
+                        I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>danieledoun9@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+229 01 61 61 40 16</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Benin, West Africa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" data-en-placeholder="Your Name" data-fr-placeholder="Votre Nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" data-en-placeholder="Your Email" data-fr-placeholder="Votre Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" data-en-placeholder="Subject" data-fr-placeholder="Sujet" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" data-en-placeholder="Your Message" data-fr-placeholder="Votre Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-en="Send Message" data-fr="Envoyer le Message">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Daniel EDOUN. All rights reserved.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

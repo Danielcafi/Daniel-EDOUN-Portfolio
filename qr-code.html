@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio QR Code Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        .qr-code {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            display: inline-block;
+        }
+        .btn {
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .instructions {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📱 Portfolio QR Code</h1>
+        <p>Scan this QR code with your phone to open the portfolio</p>
+        
+        <div class="qr-code">
+            <div id="qrcode"></div>
+        </div>
+        
+        <div class="instructions">
+            <h3>📋 Instructions:</h3>
+            <ol>
+                <li><strong>Start server:</strong> Double-click "start-server.bat" on your computer</li>
+                <li><strong>Connect phone:</strong> Make sure your phone is on the same WiFi</li>
+                <li><strong>Scan QR code:</strong> Use your phone's camera to scan the code above</li>
+                <li><strong>Open portfolio:</strong> Your portfolio will open on your phone!</li>
+            </ol>
+        </div>
+        
+        <a href="index.html" class="btn">Open Portfolio on Computer</a>
+        <button onclick="generateQR()" class="btn">Generate New QR Code</button>
+        
+        <div style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+            <p>Your portfolio is fully responsive and works perfectly on mobile devices!</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <script>
+        function generateQR() {
+            // Get your computer's IP address
+            const url = window.location.origin.replace('localhost', getLocalIP());
+            const qrUrl = url.replace('file://', 'http://') + ':5173';
+            
+            // Clear previous QR code
+            document.getElementById('qrcode').innerHTML = '';
+            
+            // Generate new QR code
+            QRCode.toCanvas(document.getElementById('qrcode'), qrUrl, {
+                width: 200,
+                margin: 2,
+                color: {
+                    dark: '#000000',
+                    light: '#FFFFFF'
+                }
+            }, function (error) {
+                if (error) {
+                    console.error(error);
+                    document.getElementById('qrcode').innerHTML = 
+                        '<p style="color: #667eea; padding: 20px;">QR Code will appear when server is running</p>';
+                }
+            });
+        }
+        
+        function getLocalIP() {
+            // This is a simplified version - in real use, you'd get the actual IP
+            return '192.168.1.100'; // Replace with your actual IP
+        }
+        
+        // Generate QR code on page load
+        window.onload = function() {
+            generateQR();
+        };
+    </script>
+</body>
+</html>
